@@ -1,14 +1,199 @@
-<html class="overflow-y-scroll" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T & M 4eva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        #menu-toggle { display: none; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-bg': '#F8E0D9',
+                        'brand-red': '#D44A4A',
+                    },
+                    fontFamily: {
+                        'heading': ['Cormorant Garamond', 'serif'],
+                        'body': ['Montserrat', 'sans-serif']
+                    },
+                    letterSpacing: {
+                        'custom': '.02em',
+                    },
+                    animation: {
+                        'marquee-wave': 'marquee-wave 25s linear infinite',
+                    },
+                    keyframes: {
+                        'marquee-wave': {
+                            '0%': { transform: 'translateX(0%) translateY(0px)' },
+                            '25%': { transform: 'translateX(-25%) translateY(-4px)' },
+                            '50%': { transform: 'translateX(-50%) translateY(0px)' },
+                            '75%': { transform: 'translateX(-75%) translateY(4px)' },
+                            '100%': { transform: 'translateX(-100%) translateY(0px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-bg text-brand-red font-body">
+
+    <input type="checkbox" id="menu-toggle" class="peer">
     
-    <title>Taylor & Mitch</title>
-    <link rel="stylesheet" href="./output.css" />
-  </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  </body>
+    <nav class="fixed top-0 left-0 h-screen w-full bg-black bg-opacity-95 z-40
+                flex flex-col items-center justify-center
+                -translate-x-full peer-checked:translate-x-0 transition-transform duration-300">
+        
+        <label for="menu-toggle" class="absolute top-6 left-6 cursor-pointer">
+            <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </label>
+        
+        <div class="text-center space-y-8">
+            <a href="#" class="block text-white text-3xl font-heading tracking-custom">Travel & Stay</a>
+            <a href="#" class="block text-white text-3xl font-heading tracking-custom">Things to Do</a>
+            <a href="#" class="block text-white text-3xl font-heading tracking-custom">Registry</a>
+        </div>
+        
+        <a href="#" class="absolute bottom-10 px-8 py-3 text-white border border-white font-body hover:bg-white hover:text-black">RSVP</a>
+    </nav>
+
+
+    <header class="p-6 md:p-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center border-b border-brand-red pb-4">
+            <a href="#" class="text-lg font-heading tracking-wider">Elena & Collette</a>
+            
+            <label for="menu-toggle" class="md:hidden cursor-pointer z-50">
+                 <svg class="h-6 w-6 text-brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                 </svg>
+            </label>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm tracking-widest">
+                <a href="#" class="hover:opacity-70">Travel & Stay</a>
+                <a href="#" class="hover:opacity-70">Things to Do</a>
+                <a href="#" class="hover:opacity-70">Registry</a>
+                <a href="#" class="px-5 py-2 border border-brand-red hover:bg-brand-red hover:text-white">RSVP</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="py-16 md:py-24 px-6">
+            <div class="relative max-w-2xl mx-auto text-center">
+                
+                <div class="absolute top-0 left-0 text-left text-sm tracking-widest -translate-y-2">
+                    <p>WE'RE GETTING</p>
+                    <p>MARRIED</p>
+                </div>
+
+                <div class="absolute top-0 right-0 text-right text-sm tracking-widest -translate-y-2">
+                    <p>4.10.25</p>
+                    <p>ATLANTA, GA</p>
+                </div>
+
+                <div>
+                    <h1 class="text-7xl md:text-9xl font-heading leading-none tracking-custom">TAYLOR</h1>
+                    <h1 class="text-7xl md:text-9xl font-heading leading-none tracking-custom">&</h1>
+                    <h1 class="text-7xl md:text-9xl font-heading leading-none tracking-custom">MITCH</h1>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-12 md:py-20 border-t border-b border-brand-red overflow-x-hidden">
+            <div class="relative flex">
+                <div class="animate-marquee-wave whitespace-nowrap flex items-center -rotate-2">
+                    <span class="mx-4 text-xl font-heading">We're getting married ❤️</span>
+                    <span class="mx-4 text-xl font-heading">We're getting married ❤️</span>
+                    <span class="mx-4 text-xl font-heading">We're getting married ❤️</span>
+                    <span class="mx-4 text-xl font-heading">We're getting married ❤️</span>
+                    <span class="mx-4 text-xl font-heading">We're getting married ❤️</span>
+                    <span class="mx-4 text-xl font-heading">We're getting married ❤️</span>
+                </div>
+                <div class="absolute top-0 animate-marquee-wave whitespace-nowrap flex items-center -rotate-2">
+                    <span class="mx-4 text-xl font-heading">We're getting married ❤️</span>
+                    <span class="mx-4 text-xl font-heading">We're getting married ❤️</span>
+                    <span class="mx-4 text-xl font-heading">We're getting married ❤️</span>
+                    <span class="mx-4 text-xl font-heading">We're getting married ❤️</span>
+                    <span class="mx-4 text-xl font-heading">We're getting married ❤️</span>
+                    <span class="mx-4 text-xl font-heading">We're getting married ❤️</span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-16 md:py-24 px-6">
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-2xl md:text-3xl font-heading leading-relaxed tracking-custom">Join us as we celebrate this new chapter in our lives together. You can find our full weekend schedule and all the essential details below. We hope to see you there!</p>
+            </div>
+        </section>
+        
+        <section class="py-16 md:py-24 px-6">
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+                <div class="text-center md:text-left">
+                    <h2 class="text-6xl md:text-7xl font-heading tracking-custom">The weekend</h2>
+                </div>
+                <div class="font-body text-gray-800 space-y-8">
+                    <div>
+                        <h3 class="font-bold text-lg text-brand-red">Friday, April 10</h3>
+                        <p class="mt-2 font-semibold">The big day | 5 - 10 PM</p>
+                        <p>The Fox Theatre</p>
+                        <p>ATL, HOE</p>
+                    </div>
+                     <div>
+                        <h3 class="font-bold text-lg text-brand-red">Saturday, April 11</h3>
+                        <p class="mt-2 font-semibold">Some other thing! | TBD PM</p>
+                        <p>ATL, (hoe)</p>
+                        <p>11619 Three Cabins Drive, ATL</p>
+                    </div>
+                     <div>
+                        <h3 class="font-bold text-lg text-brand-red">Sunday, April 12</h3>
+                        <p class="mt-2 font-semibold">Brunch? | 11:30AM</p>
+                        <p>Restaurant, idk</p>
+                        <p>123 Anywhere street</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-t border-brand-red max-w-5xl mx-auto">
+
+        <section class="py-16 md:py-24 px-6">
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+                <div class="text-center md:text-left">
+                    <h2 class="text-6xl md:text-7xl font-heading tracking-custom">Where to stay</h2>
+                </div>
+                <div class="text-gray-700 text-sm leading-relaxed font-body">
+                    <p>We’ve put together a few hotel groupings for you based on our wedding venue location – Williamsburg, Brooklyn. We recommend staying where you plan to spend the majority of your time.</p>
+                    <a href="#" class="inline-block mt-8 px-5 py-2 border border-brand-red text-brand-red hover:bg-brand-red hover:text-white tracking-widest">FIND A HOTEL</a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-t border-brand-red max-w-5xl mx-auto">
+
+        <section class="py-16 md:py-24 px-6">
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+                <div class="text-center md:text-left">
+                    <h2 class="text-6xl md:text-7xl font-heading tracking-custom">Things to do</h2>
+                </div>
+                <div class="text-gray-700 text-sm leading-relaxed font-body">
+                    <p>For our out of town family and friends, we want you to enjoy the city as locals. Here are some of our favorite spots to eat, drink, and explore in Brooklyn.</p>
+                    <a href="#" class="inline-block mt-8 px-5 py-2 border border-brand-red text-brand-red hover:bg-brand-red hover:text-white tracking-widest">EXPLORE THE CITY</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
 </html>
