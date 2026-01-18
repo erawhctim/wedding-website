@@ -1,0 +1,29 @@
+{# src/_includes/prose-markdown-block.njk #}
+
+{% set sectionClasses = sectionClasses or "py-6 md:py-24 px-6" %}
+
+{% set containerClasses = containerClasses or "max-w-2xl mx-auto" %}
+
+{% set proseClasses = proseClasses or
+  "prose prose-lg \
+   prose-headings:font-heading \
+   prose-headings:text-brand-red \
+   prose-p:text-brand-red \
+   prose-li:text-brand-red \
+   prose-p:leading-snug \
+   prose-li:leading-tight \
+   prose-li:marker:text-brand-red \
+   prose-strong:text-brand-red prose-strong:font-semibold \
+   prose-em:text-brand-red prose-em:italic \
+   max-w-none" %}
+
+<section class="{{ sectionClasses }}">
+  <div class="{{ containerClasses }}">
+    <div class="{{ proseClasses }}">
+      {% set mdContent %}
+        {% include file %}
+      {% endset %}
+      {{ mdContent | markdownify | safe }}
+    </div>
+  </div>
+</section>

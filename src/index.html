@@ -141,17 +141,8 @@
             </div>
         </section>
 
-
-        <section class="py-16 md:py-24 px-6">
-          <div class="max-w-2xl mx-auto text-left">
-            <div class="prose prose-lg prose-headings:font-heading prose-headings:text-brand-red prose-li:text-brand-red prose-li:marker:text-brand-red prose-p:text-brand-red prose-strong:text-brand-red prose-em:text-brand-red prose-em:text-red-950 max-w-none">
-              {% set itineraryContent %}
-                {% include "itinerary.md" %}
-              {% endset %}
-              {{ itineraryContent | markdownify | safe }}
-            </div>
-          </div>
-        </section>
+        {% set file = "itinerary.md" %}
+        {% include "markdown-block.njk" %}
         
         
         <section class="py-16 md:py-24 px-6">
