@@ -7,7 +7,7 @@
 - is 
 - a 
 - list
-  - plus some
+  - plus some *in italic* here...
   - other options **in bold**!
 
 

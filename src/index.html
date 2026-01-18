@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taylor & Mitch</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -144,10 +144,12 @@
 
         <section class="py-16 md:py-24 px-6">
           <div class="max-w-2xl mx-auto text-left">
-            {% set itineraryContent %}
-              {% include "itinerary.md" %}
-            {% endset %}
-            {{ itineraryContent | markdownify | safe }}
+            <div class="prose prose-lg prose-headings:font-heading prose-headings:text-brand-red prose-li:text-brand-red prose-li:marker:text-brand-red prose-p:text-brand-red prose-strong:text-brand-red prose-em:text-brand-red prose-em:text-red-950 max-w-none">
+              {% set itineraryContent %}
+                {% include "itinerary.md" %}
+              {% endset %}
+              {{ itineraryContent | markdownify | safe }}
+            </div>
           </div>
         </section>
         
