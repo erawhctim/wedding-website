@@ -141,10 +141,13 @@
             </div>
         </section>
 
-        
+
         <section class="py-16 md:py-24 px-6">
-          <div>
-            {% include "itinerary.md" %}
+          <div class="max-w-2xl mx-auto text-left">
+            {% set itineraryContent %}
+              {% include "itinerary.md" %}
+            {% endset %}
+            {{ itineraryContent | markdownify | safe }}
           </div>
         </section>
         

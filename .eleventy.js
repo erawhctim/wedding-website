@@ -7,7 +7,9 @@ module.exports = function(eleventyConfig) {
     linkify: true,
   };
   
-  eleventyConfig.setLibrary("md", markdownIt(options));
+  const mdLib = markdownIt(options);
+  eleventyConfig.setLibrary("md", mdLib);
+  eleventyConfig.addFilter("markdownify", (content) => mdLib.render(content));
   
   return {
     dir: {
