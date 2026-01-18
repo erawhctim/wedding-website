@@ -140,27 +140,16 @@
                 </p>
             </div>
         </section>
-
-        {% set file = "itinerary.md" %}
-        {% include "markdown-block.njk" %}
         
         
         <section class="py-16 md:py-24 px-6">
-            <div class="text-center md:text-left max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+            <div class="text-left md:text-left max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
                 <div class="text-center md:text-left">
                     <h2 class="text-6xl md:text-7xl font-heading tracking-custom">The weekend</h2>
                 </div>
                 <div class="font-body text-gray-800 space-y-8">
-                    <div class="">
-                        <h3 class="font-bold font-heading text-4xl text-brand-red">Friday, April 10</h3>
-                        <p class="mt-3 font-bold text-brand-red">The big day | 5 - 10 PM</p>
-                        <p class="text-brand-red">The Fox Theatre</p>
-                        <p class="text-brand-red">660 Peachtree St NE</p>
-                    </div>
-                     <div>
-                        <h3 class="font-bold font-heading text-4xl text-brand-red">Saturday, April 11</h3>
-                        <p class="mt-3 font-bold text-brand-red">Something else? TBD!</p>
-                    </div>
+                  {% set file = "itinerary.md" %}
+                  {% include "markdown-block.njk" %}
                 </div>
             </div>
         </section>
