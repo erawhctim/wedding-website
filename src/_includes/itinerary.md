@@ -5,7 +5,8 @@ Join us for a nightcap, a toast, or cocktails before "I do" as we ease into the 
 **Location:**
 
 The Iberian Pig
-121 Sycamore St, Decatur
+121 Sycamore St, Decatur  
+7:30 PM
 
 **Attire** : Elevated Casual
   - Dressy but relaxed: think cocktails at a great restaurant.
