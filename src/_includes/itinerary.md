@@ -29,10 +29,17 @@ Expect excellent food, music to dance to, and just a touch of revelry
 **Location:**
 
 The Fox Theatre
-660 Peachtree St NE, Atlanta
+660 Peachtree St NE, Atlanta  
 
 
-**Attire** : Black Tie (Optional)
-- Formal attire encouraged. Think tuxedos or suits with ties and floor-length dresses. 
+**Attire** : Black Tie Optional
+- Formal attire encouraged.  
 - Dress to impress; this is *The Fox Theatre* we’re talking about.
+- *For ladies:* long dresses.
+- *For gentlemen:* tuxedo or suit with a tie.
+
+**Parking:**  
+- We highly recommend using Uber, Lyft, or a taxi to and from the event. Parking in the city is limited, and we want everyone to celebrate safely.  
+- A small number of parking spaces are available through the Fox Theatre. If you plan to drive, please indicate this on your RSVP so we can reserve a spot for you.
+ 
 
