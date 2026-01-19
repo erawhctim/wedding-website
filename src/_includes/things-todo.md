@@ -1,2 +1,2 @@
 
-Check back soon for some recs :)
+The Warehouse Guide to Atlanta: 2026 Edition  
