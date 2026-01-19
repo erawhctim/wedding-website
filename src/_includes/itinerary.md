@@ -15,8 +15,8 @@ The Iberian Pig
   - *For gentlemen:* khakis or dark, well-fitted jeans paired with a collared shirt.
  
 **Parking:**
-There is ample parking in downtown Decatur. 
-We recommend the BLANK parking garage: it costs $6.00 for the entire evening.
+There is ample parking in downtown Decatur.  
+We recommend the [parking garage at the Courthouse (125 W Trinity Pl)](https://maps.app.goo.gl/nWuZpV7a8Wm2c66b8): $6.00 flat for the entire evening.
 
 
 ## Friday, April 10th: The Main Event
