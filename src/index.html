@@ -175,10 +175,9 @@
                 <div class="text-center md:text-left">
                     <h2 class="text-6xl md:text-7xl font-heading tracking-custom">Things to do</h2>
                 </div>
-                <div class="text-brand-red text-center text-md leading-relaxed font-body">
-                    <p>
-                      Check back soon for a list of some of our favorite things to do, see, and eat around Atlanta.
-                    </p>
+                <div class="font-body text-gray-800 space-y-8">
+                  {% set file = "things-todo.md" %}
+                  {% include "markdown-block.njk" %}
                 </div>
             </div>
         </section>
