@@ -157,14 +157,13 @@
         <hr class="border-t border-brand-red max-w-5xl mx-auto">
 
         <section class="py-16 md:py-24 px-6">
-            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+            <div class="text-left md:text-left max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
                 <div class="text-center md:text-left">
                     <h2 class="text-6xl md:text-7xl font-heading tracking-custom">Where to stay</h2>
                 </div>
-                <div class="text-brand-red text-center text-md leading-relaxed font-body">
-                  <p>
-                    Check back soon for some hotel recommendations :)
-                  </p>
+                <div class="font-body text-gray-800 space-y-8">
+                  {% set file = "hotels.md" %}
+                  {% include "markdown-block.njk" %}
                 </div>
             </div>
         </section>
