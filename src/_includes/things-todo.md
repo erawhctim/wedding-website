@@ -1,6 +1,8 @@
 
 # The Warehouse Guide to Atlanta 2026 
 
+### Welcome to ATL. The A. The City to Busy to Hate. Just don't call it Hotlanta. 
+
 **Coffee**  
 - Perc
 - Land of A Thousand Hills Coffee
